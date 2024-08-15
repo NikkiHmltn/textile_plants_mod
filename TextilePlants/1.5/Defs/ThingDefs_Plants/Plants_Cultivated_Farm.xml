@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--=========================== Production crops ==============================-->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>TP_Flax</defName>
+		<label>flax plant</label>
+		<description>A mid-size crop with blue flowers that yields fiber from its stalks. These are used to make linen cloth.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/TP_FlaxPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<growDays>3</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>TP_Linen</harvestedThingDef>
+			<harvestYield>7</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<immatureGraphicPath>Things/Plant/TP_FlaxPlantImmature</immatureGraphicPath>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	
+</Defs>

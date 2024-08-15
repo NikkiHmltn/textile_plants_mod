@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Fabrics ==============================-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>TP_Linen</defName>
+		<label>linen</label>
+		<description>Linen cloth woven and spun from flax fibers.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/TP_Linen</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(201,166,127)</color>
+		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+			<MaxHitPoints>85</MaxHitPoints>
+			<MarketValue>1</MarketValue>
+			<Mass>0.026</Mass>
+			<Flammability>1.2</Flammability>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>50</minRewardCount>
+		<stuffProps>
+			<statFactors>
+				<Flammability>1.2</Flammability>
+				<Beauty>1</Beauty>
+			</statFactors>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(201,166,127)</color>
+			<commonality>2</commonality>	
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+	
+</Defs>
